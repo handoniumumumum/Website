@@ -1,0 +1,10 @@
+﻿.quicksandFont, a.nav-link {
+    font-family: "Quicksand";
+}
+
+#slide {
+    left: -300px;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+}
+

@@ -1,0 +1,45 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>_Layout</title>
+    @RenderSection("Scripts")
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="~/css/Brandon.css" rel="stylesheet" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand quicksandFont" asp-page="/Index">Brandon Merriman</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#brandonLinks" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="brandonLinks">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link quicksandFont" href="https://github.com/handoniumumumum">GitHub</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link quicksandFont" href="http://brandonmerriman.com/">Game Journal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link quicksandFont" href="https://www.linkedin.com/in/brandonmerriman/">LinkedIn</a>
+                </li>
+                
+            </ul>
+
+        </div>
+
+    </nav>
+
+    @RenderBody()
+
+</body>
+
+
+</html>
+
